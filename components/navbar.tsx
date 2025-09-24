@@ -1,5 +1,6 @@
 "use client"
 
+import Image from "next/image"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
 import { Menu } from "lucide-react"
@@ -33,9 +34,19 @@ export function Navbar() {
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-16 items-center justify-between">
-        <Link href="/" className="flex items-center space-x-2">
-          <span className="text-xl font-bold text-teal-600">TechTide</span>
-          <span className="text-xl font-medium">Private Ltd</span>
+        <Link href="/" className="flex items-center space-x-3">
+          <Image
+            src="/logo-transparent-png.png"
+            alt="TechTide logo"   
+            width={70}
+            height={70}
+            className="object-contain"
+            priority
+          />
+          <div className="flex flex-col leading-none">
+            <span className="text-xl font-bold text-teal-600">TechTide</span>
+            <span className="text-sm font-medium text-foreground">Private Ltd</span>
+          </div>
         </Link>
         <nav className="hidden md:flex gap-6">
           {routes.map((route) => (

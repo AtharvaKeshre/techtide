@@ -167,6 +167,7 @@ export default function ContactPage() {
                   </CardHeader>
                   <CardContent>
                     <CardDescription>+91 9981635901</CardDescription>
+
                   </CardContent>
                 </Card>
                 <Card>
@@ -177,7 +178,7 @@ export default function ContactPage() {
                     </CardTitle>
                   </CardHeader>
                   <CardContent>
-                    <CardDescription>info@techtide.com</CardDescription>
+                    <CardDescription>icon.engin@gmail.com</CardDescription>
                   </CardContent>
                 </Card>
               </div>
@@ -186,9 +187,9 @@ export default function ContactPage() {
                 <p className="text-muted-foreground">
                   Monday - Friday: 9:00 AM - 6:00 PM
                   <br />
-                  Saturday: 9:00 AM - 1:00 PM
+                  Saturday - Sunday: 9:00 AM - 3:00 PM
                   <br />
-                  Sunday: Closed
+                  
                 </p>
               </div>
             </div>

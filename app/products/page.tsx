@@ -4,6 +4,7 @@ import { ArrowRight } from "lucide-react"
 
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
+import ProductModal from "@/components/product-modal"
 
 export default function ProductsPage() {
   return (
@@ -33,7 +34,7 @@ export default function ProductsPage() {
             <Card>
               <CardHeader className="p-4">
                 <Image
-                  src="/placeholder.svg?height=200&width=400"
+                  src="PLMFY ROLLER MILL-0.png?height=200&width=400"
                   alt="Soya Processing Machinery"
                   width={400}
                   height={200}
@@ -41,16 +42,17 @@ export default function ProductsPage() {
                 />
               </CardHeader>
               <CardContent className="p-6">
-                <CardTitle>Soya Processing Machinery</CardTitle>
+                
+                <CardTitle>Flour Milling Equipment</CardTitle>
                 <CardDescription className="mt-2">
                   Complete range of machinery for soya processing, including dal mill, flakes, grits, and flour section.
                 </CardDescription>
               </CardContent>
               <CardFooter className="p-6 pt-0">
-                <Button variant="outline" className="w-full">
-                  Learn More
-                  <ArrowRight className="ml-2 h-4 w-4" />
-                </Button>
+                <ProductModal
+                  title="PLMFY ROLLER MILL"
+                  images={["/PLMFY ROLLER MILL-1.png", "/PLMFY ROLLER MILL-2.png", "/PLMFY ROLLER MILL-3.png", "/PLMFY ROLLER MILL-4.png", "/PLMFY ROLLER MILL-5.png", "/PLMFY ROLLER MILL-6.png", "/Purifier-1.png", "/Purifier-2.png", "/Purifier-3.png", "/Purifier-4.png", "/Purifier-5.png", "/Purifier-6.png"]}
+                />
               </CardFooter>
             </Card>
             <Card>
@@ -64,16 +66,13 @@ export default function ProductsPage() {
                 />
               </CardHeader>
               <CardContent className="p-6">
-                <CardTitle>Rice Milling Machines</CardTitle>
+                <CardTitle>PLQF Purifier</CardTitle>
                 <CardDescription className="mt-2">
                   State-of-the-art rice milling machines for efficient and high-quality rice processing.
                 </CardDescription>
               </CardContent>
               <CardFooter className="p-6 pt-0">
-                <Button variant="outline" className="w-full">
-                  Learn More
-                  <ArrowRight className="ml-2 h-4 w-4" />
-                </Button>
+                <ProductModal title="Rice Milling Machines" images={["/placeholder.jpg", "/placeholder-user.jpg"]} />
               </CardFooter>
             </Card>
             <Card>
@@ -93,10 +92,7 @@ export default function ProductsPage() {
                 </CardDescription>
               </CardContent>
               <CardFooter className="p-6 pt-0">
-                <Button variant="outline" className="w-full">
-                  Learn More
-                  <ArrowRight className="ml-2 h-4 w-4" />
-                </Button>
+                <ProductModal title="Grain Processing Equipment" images={["/placeholder.jpg", "/placeholder-user.jpg"]} />
               </CardFooter>
             </Card>
             <Card>
@@ -116,10 +112,7 @@ export default function ProductsPage() {
                 </CardDescription>
               </CardContent>
               <CardFooter className="p-6 pt-0">
-                <Button variant="outline" className="w-full">
-                  Learn More
-                  <ArrowRight className="ml-2 h-4 w-4" />
-                </Button>
+                <ProductModal title="Flour Milling Solutions" images={["/flour-mill.jpeg", "/placeholder.jpg"]} />
               </CardFooter>
             </Card>
             <Card>
@@ -139,10 +132,7 @@ export default function ProductsPage() {
                 </CardDescription>
               </CardContent>
               <CardFooter className="p-6 pt-0">
-                <Button variant="outline" className="w-full">
-                  Learn More
-                  <ArrowRight className="ml-2 h-4 w-4" />
-                </Button>
+                <ProductModal title="Conveyor Systems" images={["/placeholder.jpg", "/placeholder.jpg"]} />
               </CardFooter>
             </Card>
             <Card>
@@ -162,10 +152,7 @@ export default function ProductsPage() {
                 </CardDescription>
               </CardContent>
               <CardFooter className="p-6 pt-0">
-                <Button variant="outline" className="w-full">
-                  Learn More
-                  <ArrowRight className="ml-2 h-4 w-4" />
-                </Button>
+                <ProductModal title="Sortex Machines" images={["/placeholder.jpg", "/placeholder.jpg"]} />
               </CardFooter>
             </Card>
           </div>

@@ -12,7 +12,8 @@ const inter = Inter({ subsets: ["latin"] })
 export const metadata: Metadata = {
   title: "TechTide Private Ltd",
   description: "Providing innovative engineering solutions since 2007",
-    generator: 'v0.dev'
+  generator: 'v0.dev',
+  icons: '/logo-transparent-png.png',
 }
 
 export default function RootLayout({
