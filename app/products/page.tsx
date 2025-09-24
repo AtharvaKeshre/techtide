@@ -34,7 +34,7 @@ export default function ProductsPage() {
             <Card>
               <CardHeader className="p-4">
                 <Image
-                  src="PLMFY ROLLER MILL-0.png"
+                  src="/PLMFY ROLLER MILL-0.png"
                   alt="Soya Processing Machinery"
                   width={400}
                   height={200}
